@@ -1,17 +1,19 @@
 .navbar {
     display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: transparent; /* No background color */
-    color: #FFFFFF; /* White text */
+    background-color: transparent; 
+    color: #FFFFFF; 
     z-index: 1000;
   }
   
   .navbar-logo a {
+    margin-left:200px;
     color: #FFFFFF; /* White text */
     text-decoration: none;
     font-size: 24px;
@@ -21,23 +23,43 @@
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    margin-right:200px;
   }
   
   .navbar-links li {
-    margin: 0;
+    margin-right:0px;
   }
   
   .navbar-links a {
     color: #FFFFFF; /* White text */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 12px;
     border-radius: 4px;
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+
+  .navbar-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(135, 234, 135);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .navbar-links a:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    color:  rgb(135, 234, 135); /* Change text color to light green on hover */
+  }
+  
+  .navbar-links a:hover::after {
+    width: 50%; /* Display the underline on hover */
   }
   
