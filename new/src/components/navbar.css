@@ -7,14 +7,6 @@
     background-color: #000000;
   }
   
-  .navbar-logo a {
-    margin-left:200px;
-    color: #FFFFFF; /* White text */
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
   .navbar-links {
     list-style: none;
     display: flex;
@@ -42,7 +34,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: rgb(135, 234, 135);
+    background: #00A97F;
     transition: width 0.3s;
     position: absolute;
     bottom: -4px;
@@ -51,7 +43,7 @@
   }
   
   .navbar-links a:hover {
-    color:  rgb(135, 234, 135); /* Change text color to light green on hover */
+    color: #00A97F; /* Change text color to light green on hover */
   }
   
   .navbar-links a:hover::after {
@@ -60,7 +52,7 @@
 
   .btn {
     margin-top: -2%;
-    background-color: lightgreen;
+    background-color:#00A97F;
     color: #000000;
     padding: 10px 20px;
     border: none;
@@ -73,7 +65,51 @@
   
   .btn:hover {
     background-color: black;
-    color:lightgreen;
-    border: 2px solid lightgreen;
+    color:#00A97F;
+    border: 2px solid #00A97F;
     transform: scale(1.05);
   }
+
+ /* === removing default button style ===*/
+.but {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.but {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #00A97F;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.but:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
