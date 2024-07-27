@@ -1,0 +1,94 @@
+/* src/Project.css */
+.project-container {
+    display: flex;
+    background-color: #1c1c1c; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 75vh;
+    margin: 10px 220px;
+}
+
+.project-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left; 
+}
+
+.project-number {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #00A97F;
+    text-align: left; 
+}
+
+.project-title {
+    font-size: 2rem;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    text-align: left; 
+}
+
+.project-description {
+    margin: 10px 0;
+    color: #a0a0a0;
+    text-align: left; 
+}
+
+.project-technologies {
+    margin: 10px 0;
+    color: #00A97F;
+    text-align: left; 
+}
+
+.project-buttons {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.live-project-button, .github-button {
+    background-color: #00A97F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left; 
+}
+
+.github-button {
+    background-color: #333;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    background-color:#00A97F ;
+  }
+
+  .navigation-buttons {
+    margin-top: 500px;
+  }
+
+  .navigation-buttons button{
+    background-color: #00A97F;
+    border: #00A97F;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+  }

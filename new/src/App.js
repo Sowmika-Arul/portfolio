@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Resume from './components/Resume'; // Import the Resume component
+import Resume from './components/Resume';
+import Projects from './components/Projects';  
 import './App.css';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             </div>
           } />
           <Route path="/resume" element={<Resume />} />
+          <Route path = "/projects" element ={<Projects/>}/>
         </Routes>
       </div>
     </Router>
