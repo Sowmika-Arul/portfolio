@@ -1,0 +1,86 @@
+.resume {
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+    color: #fff;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 40%;
+    background-color:black;
+    padding: 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sidebar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .sidebar p {
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  .sidebar button {
+    width: 70%;
+    background: none;
+    border: none;
+    background-color:#121212;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar button:hover {
+    background-color:  #00A97F;
+  }
+  
+  .main-content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .main-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .main-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .experience-item, .education-item, .skills-item, .about-me-item {
+    margin-bottom: 20px;
+  }
+  
+  .experience-item h3, .education-item h3, .skills-item h3, .about-me-item h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #ccc;
+  }
+  
+  .experience-item h4, .education-item h4, .skills-item h4, .about-me-item h4 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fff;
+  }
+  
+  .experience-item p, .education-item p, .skills-item p, .about-me-item p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  

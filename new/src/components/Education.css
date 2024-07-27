@@ -1,0 +1,39 @@
+.education-container {
+    padding: 20px;
+    max-width: 800px;
+    width:1000vh;
+    margin: 0 auto;
+    background-color: #121212;
+  }
+  
+  .education-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .education-content {
+    flex-grow: 1;
+  }
+  
+  .education-year {
+    background-color: #00A97F;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  h2{
+    color: #00A97F;
+  }
