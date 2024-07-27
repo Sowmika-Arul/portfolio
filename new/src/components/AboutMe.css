@@ -1,0 +1,38 @@
+/* AboutMe.css */
+.about-me-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-me-column {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.about-me-box {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333333;
+}
+
+.about-me-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.about-me-container h2{
+    color:#00A97F;
+}
