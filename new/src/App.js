@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 import Loader from './components/Loader';
 import image from './components/yellow.jpeg';
 import './App.css';
@@ -47,7 +47,7 @@ function App() {
         />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
