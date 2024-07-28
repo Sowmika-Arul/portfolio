@@ -3,7 +3,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #000000; /* Dark background for contrast */
+  background-color: #000000; 
   color: #FFFFFF;
 }
 
@@ -31,18 +31,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:black; /* Dark gray background for the photo section */
+  background-color:black; 
 }
 
 .profile-image-wrapper {
   position: relative;
-  width: 300px; /* Adjust the size as needed */
-  height: 300px; /* Adjust the size as needed */
+  width: 350px; 
+  height: 350px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Ensures the image fits inside the circle */
+  overflow: hidden; 
 }
 
 .profile-image {
@@ -50,7 +50,7 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  animation: pulse 3s infinite; /* Animation added */
+  animation: pulse 3s infinite; 
 }
 
 @keyframes pulse {

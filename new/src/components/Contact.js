@@ -100,7 +100,7 @@ const ContactForm = () => {
       <FormWrapper>
         <FormContainer>
           <Title>Let's work together</Title>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nescuint sit illo esse commodi.</p>
+          <p>Let’s connect and explore how we can work together to create impactful solutions.</p>
           <Form>
             <Input type="text" placeholder="First Name" />
             <Input type="text" placeholder="Last Name" />
@@ -119,15 +119,15 @@ const ContactForm = () => {
         <ContactInfoContainer>
             <ContactDetail>
               <ContactIcon><i class='bx bxs-phone-call'></i></ContactIcon>
-              <New>Phone No<br></br> (+91) 9345847062</New>
+              <New><strong style={{color:'#3a3a3a'}}>Phone No</strong><br></br> (+91) 9345847062</New>
             </ContactDetail>
             <ContactDetail>
               <ContactIcon><i class='bx bxs-envelope'></i></ContactIcon>
-               <New>Email <br></br>sowmikaarulkumar@gmail.com</New>
+               <New><strong style={{color:'#3a3a3a'}} >Email</strong> <br></br>sowmikaarulkumar@gmail.com</New>
             </ContactDetail>
             <ContactDetail>
               <ContactIcon><i class='bx bx-current-location' ></i></ContactIcon> 
-              <New>Location<br></br>Tiruchengode, 637302</New>
+              <New><strong style={{color:'#3a3a3a'}}>Location</strong><br></br>Tiruchengode, 637302</New>
             </ContactDetail>
         </ContactInfoContainer>
       </FormWrapper>

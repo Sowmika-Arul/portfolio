@@ -10,25 +10,25 @@ const projectData = [
   {
     id: 1,
     number: '01',
-    title: 'Frontend Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    technologies: ['Html 5', 'Css 3', 'Javascript'],
+    title: 'Frontend Project',
+    description: 'A website which displays Kural according to the number the user entered by using third party API.',
+    technologies: ['React', 'CSS Modules'],
     image: tirukkuralImage
   },
   {
     id: 2,
     number: '02',
-    title: 'Frontend Project 2',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    technologies: ['React', 'CSS Modules'],
+    title: 'Figma Design',
+    description: 'UI design of a jungle game.',
+    technologies: ['Figma Tool'],
     image: Figma // Replace with your image paths
   },
   {
     id: 3,
     number: '03',
-    title: 'Frontend Project 3',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    technologies: ['React', 'CSS Modules'],
+    title: 'Full Stack Project',
+    description: 'A user friendly website which helps to reduce the time of both the patient and the doctor.',
+    technologies: ['HTML', 'CSS', 'Python', 'Flask Framework'],
     image: medical // Replace with your image paths
   },
  
