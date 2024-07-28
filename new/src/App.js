@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
 import image from './components/yellow.jpeg';
+import pattern from './components/pattern.png';
 import './App.css';
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
                 </div>
               </div>
               <div className="photo">
+              <img src={pattern} alt="Pattern" className="pattern-image" />
+              <img src={pattern} alt="Pattern" className="pattern-img" />
                 <div className="profile-image-wrapper">
                   <img src={image} alt="Your Name" className="profile-image" />
                 </div>
