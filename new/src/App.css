@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Ensures the image fits inside the circle */
 }
 
 .profile-image {
@@ -49,6 +50,19 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  animation: pulse 3s infinite; /* Animation added */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .profile-image-wrapper::before {
@@ -58,7 +72,6 @@
   height: 100%;
   border-radius: 50%;
   border: 5px double #00A97F;
-  box-shadow: 0 0 15px #00A97F, 0 0 25px #00A97F, 0 0 35px #00A97F; /* Glowing effect */
   pointer-events: none;
 }
 
@@ -82,7 +95,7 @@ p {
 
 .icon-button {
   background-color: #000000;
-  padding:12px 12px;
+  padding: 12px;
   color: #00A97F;
   border: 2px solid #00A97F;
   border-radius: 30px;
@@ -96,21 +109,19 @@ p {
   transform: scale(1.1);
 }
 
-.button-group a,button
-{
+.button-group a, .button {
   margin-right: 7px;
 }
-
 
 .button {
   --color: #00A97F;
   padding: 0.8em 1.7em;
   background-color: transparent;
-  border-radius: .3em;
+  border-radius: 0.3em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   font-weight: 400;
   font-size: 17px;
   border: 1px solid;
@@ -118,9 +129,9 @@ p {
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
- }
- 
- .button::before, .button::after {
+}
+
+.button::before, .button::after {
   content: '';
   display: block;
   width: 50px;
@@ -131,29 +142,27 @@ p {
   z-index: -1;
   background-color: var(--color);
   transition: 1s ease;
- }
- 
- .button::before {
+}
+
+.button::before {
   top: -1em;
   left: -1em;
- }
- 
- .button::after {
+}
+
+.button::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
- }
- 
- .button:hover::before, .button:hover::after {
+}
+
+.button:hover::before, .button:hover::after {
   height: 410px;
   width: 410px;
- }
- 
- .button:hover {
+}
+
+.button:hover {
   color: rgb(10, 25, 30);
- }
- 
- .button:active {
-  filter: brightness(.8);
- }
- 
- 
+}
+
+.button:active {
+  filter: brightness(0.8);
+}

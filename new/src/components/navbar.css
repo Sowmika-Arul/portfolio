@@ -1,77 +1,78 @@
 .navbar {
-    display: flex;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-left:100px;
-    background-color: #000000;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin-right:200px;
-  }
-  
-  .navbar-links li {
-    margin-right:0px;
-  }
-  
-  .navbar-links a {
-    color: #FFFFFF; /* White text */
-    text-decoration: none;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-left: 100px;
+  background-color: #000000;
+}
 
-  .navbar-links a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #00A97F;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .navbar-links a:hover {
-    color: #00A97F; /* Change text color to light green on hover */
-  }
-  
-  .navbar-links a:hover::after {
-    width: 50%; /* Display the underline on hover */
-  }
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-right: 250px;
+}
 
-  .btn {
-    margin-top: -2%;
-    background-color:#00A97F;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: black;
-    color:#00A97F;
-    border: 2px solid #00A97F;
-    transform: scale(1.05);
-  }
+.navbar-links li {
+  margin-right: 0px;
+}
 
- /* === removing default button style ===*/
+.navbar-links .new {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 22px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-links .new::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00A97F;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-links .new:hover {
+  color: #00A97F;
+}
+
+.navbar-links .new:hover::after {
+  width: 50%;
+}
+
+.btn {
+  margin-top: -2%;
+  background-color: #00A97F;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #00A97F;
+  border: 2px solid #00A97F;
+  transform: scale(1.05);
+}
+
+
 .but {
   margin: 0;
   height: auto;
@@ -81,10 +82,10 @@
   cursor: pointer;
 }
 
-/* button styling */
+
 .but {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #00A97F;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -96,7 +97,8 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -109,8 +111,9 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
+
 .but:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }

@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
-import Projects from './components/Projects';  
+import Projects from './components/Projects';
+// import Contact from './components/Contact';
+import Loader from './components/Loader';
+import image from './components/yellow.jpeg';
 import './App.css';
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={
+    <div className="App">
+      {loading && <Loader />} {/* Show loader if loading */}
+      <Navbar setLoading={setLoading} />
+      <Routes>
+        <Route
+          path="/"
+          element={
             <div className="main-content">
               <div className="content">
                 <h2>Software Developer</h2>
@@ -22,7 +29,7 @@ function App() {
                   <a href="https://github.com/yourusername" className="icon-button" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/yourusername" className="icon-button" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/sowmika-arulkumar-38956b259/" className="icon-button" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin"></i>
                   </a>
                   <a href="https://www.hackerrank.com/yourusername" className="icon-button" target="_blank" rel="noopener noreferrer">
@@ -32,17 +39,26 @@ function App() {
               </div>
               <div className="photo">
                 <div className="profile-image-wrapper">
-                  <img src="your-photo-url.jpg" alt="Your Name" className="profile-image" />
+                  <img src={image} alt="Your Name" className="profile-image" />
                 </div>
               </div>
             </div>
-          } />
-          <Route path="/resume" element={<Resume />} />
-          <Route path = "/projects" element ={<Projects/>}/>
-        </Routes>
-      </div>
+          }
+        />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Projects />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </div>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;
