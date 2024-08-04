@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #000000; /* Dark background */
+    background-color: #000000; 
   }
   
   .skills-container {
     max-width: 1200px;
     width: 100%;
     padding: 20px;
-    background-color: #1a1a1a; /* Slightly lighter background for the container */
+    background-color: #1a1a1a; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
@@ -39,8 +39,8 @@
   }
   
   .skill-box i {
-    font-size: 3em; /* Adjust icon size */
-    color: white; /* Icon color */
+    font-size: 3em; 
+    color: white; 
   }
   
   .skill-box:hover {
@@ -49,5 +49,5 @@
   
   .icon {
     font-size: 3em; 
-    color: white;  /* MySQL logo color */
+    color: white;  
   }

@@ -6,7 +6,7 @@
   padding: 20px;
   margin-left: 100px;
   background-color: #000000;
-  flex-wrap: wrap; /* Added to allow wrapping */
+  flex-wrap: wrap; 
 }
 
 .navbar-links {
@@ -14,7 +14,7 @@
   display: flex;
   gap: 25px;
   margin-right: 250px;
-  flex-wrap: wrap; /* Added to allow wrapping */
+  flex-wrap: wrap;
 }
 
 .navbar-links li {

@@ -132,13 +132,13 @@
   
     .project-number {
       font-size: 6rem;
-      flex-shrink: 0; /* Prevent shrinking */
+      flex-shrink: 0; 
     }
   
     .project-title {
       font-size: 1.8rem;
       text-align: center;
-      white-space: nowrap; /* Prevent wrapping */
+      white-space: nowrap; 
     }
   
     .project-image {
@@ -200,12 +200,12 @@
   
     .project-number {
       font-size: 4rem;
-      flex-shrink: 0; /* Prevent shrinking */
+      flex-shrink: 0; 
     }
   
     .project-title {
       font-size: 1.5rem;
-      white-space: nowrap; /* Prevent wrapping */
+      white-space: nowrap; 
     }
   
     .live-project-button,
@@ -245,12 +245,12 @@
   
     .project-number {
       font-size: 3rem;
-      flex-shrink: 0; /* Prevent shrinking */
+      flex-shrink: 0; 
     }
   
     .project-title {
       font-size: 1.2rem;
-      white-space: nowrap; /* Prevent wrapping */
+      white-space: nowrap; 
     }
   
     .live-project-button,
