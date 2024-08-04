@@ -1,3 +1,4 @@
+/* Existing Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,6 +6,7 @@
   padding: 20px;
   margin-left: 100px;
   background-color: #000000;
+  flex-wrap: wrap; /* Added to allow wrapping */
 }
 
 .navbar-links {
@@ -12,6 +14,7 @@
   display: flex;
   gap: 25px;
   margin-right: 250px;
+  flex-wrap: wrap; /* Added to allow wrapping */
 }
 
 .navbar-links li {
@@ -116,4 +119,58 @@
 .but:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .navbar {
+    margin-left: 0;
+    padding: 15px;
+  }
+  
+  .navbar-links {
+    margin-right: 0;
+    justify-content: center;
+  }
+  
+  .btn {
+  margin-right:15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-links .new {
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .navbar-links {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .navbar-links .new {
+    font-size: 16px;
+    padding: 4px;
+  }
+  
+  .btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
 }
