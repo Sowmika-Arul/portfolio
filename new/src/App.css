@@ -1,9 +1,10 @@
+
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #000000; 
+  background-color: #000000;
   color: #FFFFFF;
 }
 
@@ -11,6 +12,8 @@
   position: sticky;
   top: 0;
   width: 100%;
+  background: #000; /* Ensures visibility if navbar has background */
+  z-index: 1000; /* Ensures navbar stays on top */
 }
 
 .main-content {
@@ -18,8 +21,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 80px); /* Ensure content fits within viewport height */
   padding: 0 50px;
+  box-sizing: border-box; /* Include padding in width and height calculations */
 }
 
 .content {
@@ -203,6 +207,11 @@ p {
     width: 250px; /* Adjusted for responsiveness */
     height: 250px; /* Adjusted for responsiveness */
   }
+
+  .main-content {
+    height: auto; /* Allow height to adjust to content */
+    padding: 0 20px; /* Reduce padding */
+  }
 }
 
 @media (max-width: 768px) {
@@ -237,8 +246,8 @@ p {
   }
 
   .profile-image-wrapper {
-    width: 200px; /* Adjusted for responsiveness */
-    height: 200px; /* Adjusted for responsiveness */
+    width: 250px; /* Adjusted for responsiveness */
+    height: 250px; /* Adjusted for responsiveness */
   }
 }
 
