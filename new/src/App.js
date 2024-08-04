@@ -7,11 +7,12 @@ import Contact from './components/Contact';
 import Loader from './components/Loader';
 import image from './components/yellow.jpeg';
 import pattern from './components/pattern.png';
+import { SiLeetcode } from "react-icons/si";
 import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(false);
-  const roles = ["Software Developer", "MERN Stack Developer", "Machine Learning Enthusiast", "Frontend Developer", "Backend Developer"];
+  const roles = ["UI Designer", "MERN Stack Developer", "Machine Learning Enthusiast", "Frontend Developer", "Backend Developer"];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
@@ -33,17 +34,17 @@ function App() {
               <div className="content">
                 <h2>{roles[currentRole]}</h2>
                 <h1>Hello, I'm <span>Sowmika Arulkumar</span></h1>
-                <p>Eager to leverage coding and problem-solving skills in a dynamic tech company. Aiming to contribute to impactful projects and grow within an innovative organization.</p>
+                <p>Aiming to create an impactful solution to the environment which betters the lives of the people.</p>
                 <div className="button-group">
                   <button className="button">Download CV</button>
-                  <a href="https://github.com/yourusername" className="icon-button" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Sowmika-Arul" className="icon-button" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/sowmika-arulkumar-38956b259/" className="icon-button" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="https://www.hackerrank.com/yourusername" className="icon-button" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-hackerrank"></i>
+                  <a href="https://leetcode.com/u/Sowmika_1104/" className="icon-button" target="_blank" rel="noopener noreferrer">
+                  <SiLeetcode />
                   </a>
                 </div>
               </div>

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import emailjs from 'emailjs-com';
+
 
 // Wrapper for the entire form
 const FormWrapper = styled.div`
@@ -165,41 +167,117 @@ const New = styled.span`
 `;
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    service: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send('service_g84gtl3', 'template_yofvycm', {
+      to_name: 'Sowmika', // Add the recipient's name if required
+      from_name: `${formData.firstName} ${formData.lastName}`,
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      phone_number: formData.phoneNumber,
+      service: formData.service,
+      message: formData.message,
+    }, 'AcwHyKvGLHdGTDQpD')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Your message has been sent successfully!'); // Show success message
+        setFormData({ // Reset form data
+          firstName: '',
+          lastName: '',
+          email: '',
+          phoneNumber: '',
+          service: '',
+          message: ''
+        });
+      }, (err) => {
+        console.log('FAILED...', err);
+        alert('Failed to send the message. Please try again later.'); // Show error message
+      });
+  };
+
   return (
-      <FormWrapper>
-        <FormContainer>
-          <Title>Let's work together</Title>
-          <p>Let’s connect and explore how we can work together to create impactful solutions.</p>
-          <Form>
-            <Input type="text" placeholder="First Name" />
-            <Input type="text" placeholder="Last Name" />
-            <Input type="email" placeholder="Email" />
-            <Input type="tel" placeholder="Phone Number" />
-            <Select>
-              <option>Select a service</option>
-              <option>Web Development</option>
-              <option>ML Projects</option>
-              <option>UI/UX Design</option>
-            </Select>
-            <TextArea rows="4" placeholder="Type your message here." />
-            <Button type="submit">Send message</Button>
-          </Form>
-        </FormContainer>
-        <ContactInfoContainer>
-            <ContactDetail>
-              <ContactIcon><i className='bx bxs-phone-call'></i></ContactIcon>
-              <New><strong style={{color:'#3a3a3a'}}>Phone No</strong><br /> (+91) 9345847062</New>
-            </ContactDetail>
-            <ContactDetail>
-              <ContactIcon><i className='bx bxs-envelope'></i></ContactIcon>
-               <New><strong style={{color:'#3a3a3a'}}>Email</strong> <br />sowmikaarulkumar@gmail.com</New>
-            </ContactDetail>
-            <ContactDetail>
-              <ContactIcon><i className='bx bx-current-location'></i></ContactIcon> 
-              <New><strong style={{color:'#3a3a3a'}}>Location</strong><br />Tiruchengode, 637302</New>
-            </ContactDetail>
-        </ContactInfoContainer>
-      </FormWrapper>
+    <FormWrapper>
+      <FormContainer>
+        <Title>Let's work together</Title>
+        <p>Let’s connect and explore how we can work together to create impactful solutions.</p>
+        <Form onSubmit={handleSubmit}>
+          <Input
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+          <Input
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+          <Input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <Input
+            type="tel"
+            placeholder="Phone Number"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+          />
+          <Select
+            name="service"
+            value={formData.service}
+            onChange={handleChange}
+          >
+            <option value="">Select a service</option>
+            <option value="Web Development">Web Development</option>
+            <option value="ML Projects">ML Projects</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+          </Select>
+          <TextArea
+            rows="4"
+            placeholder="Type your message here."
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          <Button type="submit">Send message</Button>
+        </Form>
+      </FormContainer>
+      <ContactInfoContainer>
+        <ContactDetail>
+          <ContactIcon><i className='bx bxs-phone-call'></i></ContactIcon>
+          <New><strong style={{color:'#3a3a3a'}}>Phone No</strong><br /> (+91) 9345847062</New>
+        </ContactDetail>
+        <ContactDetail>
+          <ContactIcon><i className='bx bxs-envelope'></i></ContactIcon>
+          <New><strong style={{color:'#3a3a3a'}}>Email</strong> <br />sowmikaarulkumar@gmail.com</New>
+        </ContactDetail>
+        <ContactDetail>
+          <ContactIcon><i className='bx bx-current-location'></i></ContactIcon>
+          <New><strong style={{color:'#3a3a3a'}}>Location</strong><br />Tiruchengode, 637302</New>
+        </ContactDetail>
+      </ContactInfoContainer>
+    </FormWrapper>
   );
 };
 

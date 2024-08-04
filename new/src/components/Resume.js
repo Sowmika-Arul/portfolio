@@ -26,7 +26,7 @@ function Resume() {
   return (
     <div className="resume">
       <div className="sidebar">
-        <h1>Why hire me?</h1>
+        <h1>A Quick Recap</h1>
         <p>Explore and understand better about me.</p>
         <button onClick={() => setSelectedSection('experience')}>Experience</button>
         <button onClick={() => setSelectedSection('education')}>Education</button>

@@ -5,7 +5,7 @@ import tirukkuralImage from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src
 import Figma from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/Figma.png';
 import medical from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/medical.png';
 
-// Example project data
+
 const projectData = [
   {
     id: 1,
@@ -13,7 +13,8 @@ const projectData = [
     title: 'Frontend Project',
     description: 'A website which displays Kural according to the number the user entered by using third party API.',
     technologies: ['React', 'CSS Modules'],
-    image: tirukkuralImage
+    image: tirukkuralImage,
+    githubLink: 'https://github.com/Sowmika-Arul/Thirukkural-Viewer' 
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const projectData = [
     title: 'Figma Design',
     description: 'UI design of a jungle game.',
     technologies: ['Figma Tool'],
-    image: Figma // Replace with your image paths
+    image: Figma, 
+    githubLink: 'https://github.com/yourusername/figma-design' 
   },
   {
     id: 3,
@@ -29,10 +31,11 @@ const projectData = [
     title: 'Full Stack Project',
     description: 'A user friendly website which helps to reduce the time of both the patient and the doctor.',
     technologies: ['HTML', 'CSS', 'Python', 'Flask Framework'],
-    image: medical // Replace with your image paths
+    image: medical, 
+    githubLink: 'https://github.com/Sowmika-Arul/Medical-Management' 
   },
- 
 ];
+
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
