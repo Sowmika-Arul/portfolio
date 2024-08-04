@@ -24,13 +24,13 @@
 .about-me-box {
   border: 1px solid #333333;
   border-radius: 5px;
-  padding: 10px;
+  padding: 4px;
   margin-bottom: 10px;
   background-color: #333333;
 }
 
 .about-me-box p {
-  margin: 0;
+  margin-top: 20px;
   font-size: 16px;
 }
 
