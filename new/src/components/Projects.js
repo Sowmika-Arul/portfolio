@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Project.css';
-import tirukkuralImage from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/Tirukkural viewer.png';
+import tirukkuralImage from './Tirukkural viewer.png';
 // import rescue from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/rescue.png';
-import Figma from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/Figma.png';
-import medical from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/medical.png';
+import Figma from './Figma.png';
+import medical from './medical.png';
 
 
 const projectData = [
