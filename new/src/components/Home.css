@@ -12,6 +12,7 @@ body {
   padding: 0;
 }
 
+/* Home Content */
 .home-content {
   margin-top: -20px;
   display: flex;
@@ -70,15 +71,20 @@ p {
   transform: scale(1.05);
 }
 
+/* Icon Button */
 .icon-button {
   background-color: #000000;
-  padding: 10px;
+  padding: 10px; /* Adjust padding to create a square button for centering */
   color: #00A97F;
   border: 2px solid #00A97F;
   border-radius: 30px;
-  font-size: 25px; /* Increased icon button font size */
+  font-size: 28px; /* Increased icon button font size */
   transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none; /* Remove underline from links */
+
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .icon-button:hover {
@@ -87,6 +93,7 @@ p {
   transform: scale(1.1);
 }
 
+/* Scroll Button */
 .scroll-button {
   text-align: left; /* Align the button to the left */
   margin-top: 30px;
@@ -107,7 +114,21 @@ p {
   transform: scale(1.05);
 }
 
-/* Responsive Design */
+/* Profile Image */
+.profile-image-wrapper {
+  width: 300px; /* Increased width for the profile image */
+  height: 300px;  /* Increased height for the profile image */
+  border-radius: 50%; /* Make the image wrapper circular */
+  overflow: hidden; /* Ensure the image stays inside the circle */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fully covers the circle */
+}
+
+/* Responsive Design for Phone Screens */
 @media (max-width: 768px) {
   .home-content {
     flex-direction: column; /* Stack content and photo vertically on smaller screens */
@@ -137,15 +158,12 @@ p {
   }
 }
 
-.profile-image-wrapper {
-  width: 300px; /* Increased width for the profile image */
-  height: 300px;  /* Increased height for the profile image */
-  border-radius: 50%; /* Make the image wrapper circular */
-  overflow: hidden; /* Ensure the image stays inside the circle */
+/* Responsive Adjustments for Icon Button */
+@media (max-width: 450px) {
+  .icon-button {
+    width: 50%; /* Set width to 50% */
+    height: 50%; /* Set height to 50% */
+  }
 }
 
-.profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image fully covers the circle */
-}
+

@@ -41,13 +41,16 @@ function Home() {
     <>
       <div className="home-content">
         <div className="content">
-          <h2>{currentRole}</h2> {/* Display the current role with typing effect */}
+          {/* Add a min-height style to ensure a consistent height for the roles */}
+          <h2 style={{ minHeight: "24px" }}>
+            {currentRole || "\u00A0"} {/* Non-breaking space when empty */}
+          </h2>
           <h1>
             Hello, I'm <span>Sowmika Arulkumar</span>
           </h1>
           <p>
-          Aspiring to develop innovative solutions that have a meaningful
-          impact on the environment.
+            Aspiring to develop innovative solutions that have a meaningful
+            impact on the environment.
           </p>
           <div className="button-group">
             <button className="button">Download CV</button>
@@ -87,9 +90,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <Resume />
+
+      {/* Add a wrapper around the Resume component with margin styling */}
+      <div style={{ marginTop: "-70px", marginBottom: "150px" }}>
+        <Resume />
+      </div>
       <Projects />
+      <div style={{ marginTop: "130px"}}>
       <Contact />
+      </div>
     </>
   );
 }
