@@ -10,14 +10,14 @@
   
   .project-info {
     flex: 1;
-    padding: 20px;
+    padding: 5px;
     text-align: left;
   }
   
   .project-header {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between the number and the title */
+    gap: 8px; /* Space between the number and the title */
     flex-wrap: nowrap; /* Ensure no wrapping */
   }
   
@@ -31,6 +31,7 @@
   
   .project-title {
     font-size: 2rem;
+    font-weight: bolder;
     margin: 10px 0;
     letter-spacing: 2px;
     text-align: left;

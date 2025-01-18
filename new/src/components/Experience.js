@@ -4,6 +4,7 @@ const styles = {
   container: {
     display: 'flex',
     width: '100%',
+    marginLeft: '30px',
     fontFamily: 'Arial, sans-serif',
     color: '#fff',
     backgroundColor: '#121212',

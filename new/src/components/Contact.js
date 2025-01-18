@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com';
 const FormWrapper = styled.div`
   display: flex;
   margin: 30px 350px;
+   margin-top: 80px; /* Added margin to push the form down */
   background-color: #2d2d2d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -56,6 +57,7 @@ const ContactInfoContainer = styled.div`
 const Title = styled.h1`
   color: #00A97F;
   text-align: center;
+  font-weight: bold;
 
   @media (max-width: 768px) {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
@@ -143,6 +145,7 @@ const ContactDetail = styled.div`
   align-items: center;
   text-align: left;
   margin-bottom: 50px;
+  margin-left: 25px;
 
   @media (max-width: 768px) {
     margin-bottom: 20px; /* Adjust margin for smaller screens */
@@ -213,7 +216,7 @@ const ContactForm = () => {
     <FormWrapper>
       <FormContainer>
         <Title>Let's work together</Title>
-        <p>Let’s connect and explore how we can work together to create impactful solutions.</p>
+        <p style={{fontSize : '18px'}}><center>Let’s connect and explore how we can work together to create impactful solutions</center>.</p>
         <Form onSubmit={handleSubmit}>
           <Input
             type="text"

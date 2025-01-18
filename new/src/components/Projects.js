@@ -53,7 +53,7 @@ const Projects = () => {
   const project = projectData[currentIndex];
 
   return (
-    <div className="project-container">
+    <div className="project-container" style={{marginTop: '50px'}}>
       <div className="project-info">
         <div className="project-number">{project.number}</div>
         <h1 className="project-title">{project.title}</h1>
