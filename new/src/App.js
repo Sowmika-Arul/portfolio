@@ -1,5 +1,3 @@
-// src/App.js
-
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -14,25 +12,19 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="App">
-      {loading && <Loader />} {/* Show loader if loading */}
-      <Navbar setLoading={setLoading} />
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Use Home component for the "/" route */}
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
-  );
-}
-
-function AppWrapper() {
-  return (
     <Router>
-      <App />
+      <div className="App">
+        {loading && <Loader />} {/* Show loader if loading */}
+        <Navbar setLoading={setLoading} />
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Use Home component for the "/" route */}
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
 
-export default AppWrapper;
+export default App;

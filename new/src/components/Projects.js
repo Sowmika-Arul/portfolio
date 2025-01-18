@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Project.css';
-import tirukkuralImage from './Tirukkural viewer.png';
+import Book from './book.png';
 // import rescue from 'C:/Users/SOWMIKA/OneDrive/Desktop/PORTFOLIO/new/src/components/rescue.png';
-import Figma from './Figma.png';
+import Alumni from './alumni.png';
 import medical from './medical.png';
 
 
@@ -10,29 +10,31 @@ const projectData = [
   {
     id: 1,
     number: '01',
-    title: 'Frontend Project',
+    title: 'Book Recommendation Website',
     description: 'A website which displays Kural according to the number the user entered by using third party API.',
-    technologies: ['React', 'CSS Modules'],
-    image: tirukkuralImage,
+    technologies: ['React', 'Node js', 'Mongo', 'Express'],
+    image: Book,
     githubLink: 'https://github.com/Sowmika-Arul/Thirukkural-Viewer' 
   },
+ 
   {
     id: 2,
     number: '02',
-    title: 'Figma Design',
-    description: 'UI design of a jungle game.',
-    technologies: ['Figma Tool'],
-    image: Figma, 
-    githubLink: 'https://github.com/yourusername/figma-design' 
-  },
-  {
-    id: 3,
-    number: '03',
-    title: 'Full Stack Project',
+    title: 'Medical Management',
     description: 'A user friendly website which helps to reduce the time of both the patient and the doctor.',
     technologies: ['HTML', 'CSS', 'Python', 'Flask Framework'],
     image: medical, 
     githubLink: 'https://github.com/Sowmika-Arul/Medical-Management' 
+  },
+
+  {
+    id: 3,
+    number: '03',
+    title: 'Alumni Connect',
+    description: 'UI design of a jungle game.',
+    technologies: ['React', 'Node js', 'Mongo', 'Express'],
+    image: Alumni, 
+    githubLink: 'https://github.com/yourusername/figma-design' 
   },
 ];
 
