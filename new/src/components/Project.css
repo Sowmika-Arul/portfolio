@@ -44,7 +44,8 @@
   .project-description {
     margin: 10px 0;
     color: #a0a0a0;
-    text-align: left;
+    text-align:justify;
+    font-size: 17px; 
   }
   
   .project-technologies {

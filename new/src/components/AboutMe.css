@@ -1,98 +1,14 @@
-/* AboutMe.css */
 .about-me-container {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
 }
 
-.about-me-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.text-warning {
+  color: #ffcc00; /* Customize this with the color you want for warning text */
 }
 
-.about-me-column {
-  flex: 1;
-  min-width: 300px;
-  margin: 10px;
-  box-sizing: border-box;
+/* Additional styling for the 'mockup-code' class, if necessary */
+.mockup-code {
+  font-family: 'Courier New', Courier, monospace; /* This makes the code look like it’s in a terminal */
+  white-space: pre-wrap; /* Ensures that text wraps inside the code block */
 }
 
-.about-me-box {
-  border: 1px solid #333333;
-  border-radius: 5px;
-  padding: 4px;
-  margin-bottom: 10px;
-  background-color: #333333;
-}
-
-.about-me-box p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-.about-me-container h2 {
-  color: #00A97F;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-details {
-  margin-top: 20px;
-  text-align: center;
-  color: #a0a0a0;
-}
-
-@media (max-width: 768px) {
-  .about-me-content {
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .about-me-column {
-    width: 100%;
-    margin: 10px 0;
-    text-align: center; 
-  }
-
-  .about-me-box {
-    padding: 15px;
-    text-align: center; 
-  }
-
-  .about-me-box p {
-    font-size: 14px;
-  }
-
-  .contact-details {
-    margin-top: 20px; 
-    width: 100%; 
-  }
-}
-
-@media (max-width: 480px) {
-  .about-me-container {
-    padding: 15px;
-  }
-
-  .about-me-box {
-    padding: 10px;
-  }
-
-  .about-me-box p {
-    font-size: 14px;
-  }
-
-  .about-me-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-
-  .contact-details {
-    margin-top: 15px; 
-    width: 100%; 
-  }
-}

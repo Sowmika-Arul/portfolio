@@ -11,17 +11,17 @@ const projectData = [
     id: 1,
     number: '01',
     title: 'Book Recommendation Website',
-    description: 'A website which displays Kural according to the number the user entered by using third party API.',
+    description: 'A book recommendation website helps users discover new books based on their preferences,and genres of interest. It offers personalized suggestions, reviews, and ratings to enhance the reading experience and assist in finding the perfect book.',
     technologies: ['React', 'Node js', 'Mongo', 'Express'],
     image: Book,
-    githubLink: 'https://github.com/Sowmika-Arul/Thirukkural-Viewer' 
+    githubLink: 'https://github.com/Sowmika-Arul/Book_Recommendation' 
   },
  
   {
     id: 2,
     number: '02',
-    title: 'Medical Management',
-    description: 'A user friendly website which helps to reduce the time of both the patient and the doctor.',
+    title: 'Hospital Management',
+    description: 'A Hospital Management system focuses on the efficient administration of healthcare services, including managing patient information, hospital resources, and staff. It ensures smooth operations by organizing medical records, facilitating inventory management, and supporting various hospital departments for optimal service delivery.',
     technologies: ['HTML', 'CSS', 'Python', 'Flask Framework'],
     image: medical, 
     githubLink: 'https://github.com/Sowmika-Arul/Medical-Management' 
@@ -31,10 +31,10 @@ const projectData = [
     id: 3,
     number: '03',
     title: 'Alumni Connect',
-    description: 'UI design of a jungle game.',
+    description: 'The Alumni Connect website fosters meaningful relationships by helping alumni from various fields interact, support each other, and contribute to the growth of the community. A platform that enables former students to network, collaborate, and stay connected with their alma mater, while sharing insights, career opportunities, and mentorship.',
     technologies: ['React', 'Node js', 'Mongo', 'Express'],
     image: Alumni, 
-    githubLink: 'https://github.com/yourusername/figma-design' 
+    githubLink: 'https://github.com/Sowmika-Arul/Alumni_Connect' 
   },
 ];
 

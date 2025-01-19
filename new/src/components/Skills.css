@@ -1,4 +1,4 @@
-/* .skills-section {
+.skills-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +50,5 @@
   .icon {
     font-size: 3em; 
     color: white;  
-  } */
-
-  .timeline-end {
-    color: black; /* Text color remains black */
-    border: 1px solid white; /* Add a white border */
-    background-color: transparent; /* Remove background color */
-  }
-  
+  } 
+ 

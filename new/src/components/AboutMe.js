@@ -1,41 +1,18 @@
-// AboutMe.js
 import React from 'react';
 import './AboutMe.css'; // Import the CSS file
 
 function AboutMe() {
   return (
-    <div className="about-me-container">
-      <h2>About Me</h2>
-      <div className="about-me-content">
-        <div className="about-me-column">
-          <div className="about-me-box">
-            <p><strong>Name:</strong> Sowmika Arulkumar</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Date of Birth:</strong> April 11, 2005</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Age:</strong> 19</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Nationality:</strong> Indian</p>
-          </div>
-        </div>
-        <div className="about-me-column">
-          <div className="about-me-box">
-            <p><strong>Address:</strong> Tiruchengode</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Phone:</strong> +91 9345847062</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Email:</strong> sowmikaarulkumar@gmail.com</p>
-          </div>
-          <div className="about-me-box">
-            <p><strong>Language:</strong> Tamil, English</p>
-          </div>
-        </div>
-      </div>
+    <div className="mockup-code about-me-container">
+      <pre data-prefix="$"><code>MERN Stack Developer | Cloud Enthusiast</code></pre>
+      <pre data-prefix=">"><code>A Computer Science student driven by a passion for continuous learning and applying</code></pre>
+      <pre data-prefix=">"><code>new technologies to real-world problems.</code></pre>
+      <pre data-prefix=">" className="text-warning"><code>My areas of interest include Web Development and Figma Designing.</code></pre>
+      <pre data-prefix=">" className="text-warning"><code>I also have a foundational understanding of Cyber Security and am eager to</code></pre>
+      <pre data-prefix=">" className="text-warning"><code>delve into Machine Learning.</code></pre>
+      <pre data-prefix=">" className="text-success"><code>Proficient in C, Java, and c++, I am enthusiastic about collaborating</code></pre>
+      <pre data-prefix=">" className="text-success" ><code>on innovative projects that drive the future of technology.</code></pre>
+      <pre data-prefix=">" className="text-success" ><code>Let’s connect and explore how we can work together to create impactful solutions.</code></pre>
     </div>
   );
 }
