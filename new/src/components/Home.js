@@ -18,7 +18,7 @@ function Home() {
       "Backend Developer",
     ],
     []
-  );  
+  );
   const [currentRole, setCurrentRole] = useState("");
   const [index, setIndex] = useState(0);
   const [roleIndex, setRoleIndex] = useState(0);
@@ -74,7 +74,7 @@ function Home() {
               },
             },
             size: {
-              value: 3, // Firefly size
+              value: 4, // Firefly size
               random: true,
               animation: {
                 enable: true,
@@ -96,17 +96,17 @@ function Home() {
           interactivity: {
             events: {
               onHover: {
-                enable: true,
-                mode: "repulse", // Fireflies move away when hovered
+                enable: false, // Disable hover interaction for now
+                mode: "repulse", // Fireflies will not move on hover
               },
               onClick: {
-                enable: true,
-                mode: "push", // Add more fireflies when clicked
+                enable: false, // Disable click interaction
+                mode: "push", // Fireflies won't be added on click
               },
             },
             modes: {
               repulse: {
-                distance: 100, // Distance for repulsion
+                distance: 100, // Repulsion distance for hover
               },
               push: {
                 quantity: 3, // Number of particles added on click
@@ -120,25 +120,29 @@ function Home() {
           left: 0,
           width: "100%",
           height: "100%",
-          zIndex: -1,
+          zIndex: -1, // Keeps particles in the background
         }}
       />
 
       <div className="home-content">
         <div className="content">
-          <h2 style={{fontWeight: "bold" }}>
+          <h2 style={{ fontWeight: "bold" }}>
             {currentRole || "\u00A0"}
           </h2>
-          <h1>Hello, I'm <span style={{fontWeight: "bold"}}>Sowmika Arulkumar</span></h1>
-<p style={{
-  textAlign: "justify", 
-  marginLeft: "-5px", 
-  marginRight: "auto", 
-  width: "95%", 
-  maxWidth: "650px"
-}}>
-  Driven by a passion for technology, I aspire to create innovative solutions that not only advance progress but also foster positive change in the environment, ensuring a sustainable and harmonious future for generations to come.
-</p>
+          <h1>
+            Hello, I'm <span style={{ fontWeight: "bold" }}>Sowmika Arulkumar</span>
+          </h1>
+          <p
+            style={{
+              textAlign: "justify",
+              marginLeft: "-5px",
+              marginRight: "auto",
+              width: "95%",
+              maxWidth: "650px",
+            }}
+          >
+            Driven by a passion for technology, I aspire to create innovative solutions that not only advance progress but also foster positive change in the environment, ensuring a sustainable and harmonious future for generations to come.
+          </p>
 
           <div className="button-group">
             <button className="button">Download CV</button>
@@ -168,7 +172,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="photo" style={{marginLeft: "-20px"}}>
+        <div className="photo" style={{ marginLeft: "-20px" }}>
           <div className="profile-image-wrapper">
             <img
               src={image}
@@ -186,7 +190,6 @@ function Home() {
       <div style={{ marginTop: "130px" }}>
         <Contact />
         <Footer />
-        
       </div>
     </>
   );
