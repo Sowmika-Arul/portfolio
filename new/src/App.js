@@ -14,10 +14,8 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const particlesInit = async (engine) => {
-    console.log("Initializing particles...");
     try {
       await loadFireflyPreset(engine); // Load the firefly preset
-      console.log("Firefly preset loaded successfully.");
     } catch (error) {
       console.error("Error loading firefly preset:", error);
     }

@@ -6,7 +6,7 @@ import AboutMe from './AboutMe';
 import './Resume.css'; // Create and import your styles
 
 function Resume() {
-  const [selectedSection, setSelectedSection] = useState('experience');
+  const [selectedSection, setSelectedSection] = useState('Education');
 
   const renderSection = () => {
     switch (selectedSection) {
@@ -19,7 +19,7 @@ function Resume() {
       case 'about':
         return <AboutMe />;
       default:
-        return <Experience />;
+        return <Education />;
     }
   };
 
@@ -28,7 +28,7 @@ function Resume() {
       <div className="sidebar">
         <h1>A Quick Recap</h1>
         <p>Explore and understand better about me.</p>
-        <button onClick={() => setSelectedSection('experience')}>Experience</button>
+        {/* <button onClick={() => setSelectedSection('experience')}>Experience</button> */}
         <button onClick={() => setSelectedSection('education')}>Education</button>
         <button onClick={() => setSelectedSection('skills')}>Skills</button>
         <button onClick={() => setSelectedSection('about')}>About me</button>

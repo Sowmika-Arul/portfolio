@@ -24,7 +24,7 @@ const Navbar = ({ setLoading }) => {
         <li><button onClick={() => handleNavigation('/resume')} className='new'>Resume</button></li>
         <li><button onClick={() => handleNavigation('/projects')} className='new'>Projects</button></li>
         <li><button onClick={() => handleNavigation('/contact')} className='new'>Contact</button></li>
-        <button className="btn">Hire me</button>
+        {/* <button className="btn">Hire me</button> */}
       </ul>
     </nav>
   );

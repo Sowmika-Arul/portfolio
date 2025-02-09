@@ -16,14 +16,14 @@ function Education() {
         <li className="education-item">
           <div className="education-content">
             <h3>Vidyaa Vikas Matric Higher Secondary School</h3>
-            <p>Higher Secondary Certification - 93.1%</p>
+            <p>Higher Secondary Certificate - 93.1%</p>
           </div>
           <div className="education-year">2021 - 2022</div>
         </li>
         <li className="education-item">
           <div className="education-content">
             <h3>Vidyaa Vikas Matric Higher Secondary School</h3>
-            <p>Secondary School Leaving Certificate - 93.3%</p>
+            <p>Secondary School Leaving Certificate  - 93.3%</p>
           </div>
           <div className="education-year">2019 - 2020</div>
         </li>

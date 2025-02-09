@@ -20,7 +20,7 @@ const projectData = [
   {
     id: 2,
     number: '02',
-    title: 'Hospital Management',
+    title: 'Medi Connect',
     description: 'A Hospital Management system focuses on the efficient administration of healthcare services, including managing patient information, hospital resources, and staff. It ensures smooth operations by organizing medical records, facilitating inventory management, and supporting various hospital departments for optimal service delivery.',
     technologies: ['HTML', 'CSS', 'Python', 'Flask Framework'],
     image: medical, 
@@ -30,7 +30,7 @@ const projectData = [
   {
     id: 3,
     number: '03',
-    title: 'Alumni Connect',
+    title: 'Alumni Linkup',
     description: 'The Alumni Connect website fosters meaningful relationships by helping alumni from various fields interact, support each other, and contribute to the growth of the community. A platform that enables former students to network, collaborate, and stay connected with their alma mater, while sharing insights, career opportunities, and mentorship.',
     technologies: ['React', 'Node js', 'Mongo', 'Express'],
     image: Alumni, 

@@ -51,7 +51,7 @@ function Home() {
           },
           particles: {
             number: {
-              value: 50, // Number of particles (fireflies)
+              value: 25, // Number of particles (fireflies)
               density: {
                 enable: true,
                 area: 800,
@@ -145,7 +145,7 @@ function Home() {
           </p>
 
           <div className="button-group">
-            <button className="button">Download CV</button>
+            <button className="button">Download Resume</button>
             <a
               href="https://github.com/Sowmika-Arul"
               className="icon-button"

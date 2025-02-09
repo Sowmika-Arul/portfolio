@@ -216,7 +216,7 @@ const ContactForm = () => {
     <FormWrapper>
       <FormContainer>
         <Title>Let's work together</Title>
-        <p style={{fontSize : '18px'}}><center>Let’s connect and explore how we can work together to create impactful solutions</center>.</p>
+        <p style={{fontSize : '18px', color : 'white'}}><center>Let’s connect and explore how we can work together to create impactful solutions</center>.</p>
         <Form onSubmit={handleSubmit}>
           <Input
             type="text"
