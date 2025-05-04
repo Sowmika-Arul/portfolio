@@ -11,11 +11,11 @@ import Footer from "./Footer";
 function Home() {
   const roles = React.useMemo(
     () => [
-      "UI Designer",
       "MERN Stack Developer",
-      "Machine Learning Enthusiast",
+      "Cloud Enthusiast",
       "Frontend Developer",
       "Backend Developer",
+      "Database Developer",
     ],
     []
   );
@@ -144,7 +144,7 @@ function Home() {
           </p>
 
           <div className="button-group">
-            <button className="button">Download Resume</button>
+            <button className="button"><a href = "https://drive.google.com/file/d/1_mfiJNj-bOI3cs0BHFuT4S7oVjifRxm3/view">Download Resume</a></button>
             <a
               href="https://github.com/Sowmika-Arul"
               className="icon-button"
