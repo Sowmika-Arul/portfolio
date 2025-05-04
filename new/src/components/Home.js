@@ -42,26 +42,25 @@ function Home() {
 
   return (
     <>
-      {/* Firefly effect using tsParticles */}
       <Particles
         id="tsparticles"
         options={{
           background: {
-            color: { value: "black" }, // Set the background color
+            color: { value: "black" }, 
           },
           particles: {
             number: {
-              value: 25, // Number of particles (fireflies)
+              value: 25, 
               density: {
                 enable: true,
                 area: 800,
               },
             },
             color: {
-              value: ["#ffcc00", "#ffaa33", "#ffee00"], // Glowing yellow colors
+              value: ["#ffcc00", "#ffaa33", "#ffee00"], 
             },
             shape: {
-              type: "circle", // Fireflies are circular
+              type: "circle", 
             },
             opacity: {
               value: 0.8,
