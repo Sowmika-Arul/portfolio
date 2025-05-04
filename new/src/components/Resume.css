@@ -47,6 +47,13 @@
   background-color: #00A97F;
 }
 
+/* Highlight active button */
+.sidebar button.active {
+  background-color: #00A97F;
+  color: #000;
+  font-weight: bold;
+}
+
 .main-content {
   width: 60%;
   padding: 20px;
@@ -67,23 +74,35 @@
   margin-bottom: 20px;
 }
 
-.experience-item, .education-item, .skills-item, .about-me-item {
+.experience-item,
+.education-item,
+.skills-item,
+.about-me-item {
   margin-bottom: 20px;
 }
 
-.experience-item h3, .education-item h3, .skills-item h3, .about-me-item h3 {
+.experience-item h3,
+.education-item h3,
+.skills-item h3,
+.about-me-item h3 {
   font-size: 20px;
   margin: 0;
   color: #ccc;
 }
 
-.experience-item h4, .education-item h4, .skills-item h4, .about-me-item h4 {
+.experience-item h4,
+.education-item h4,
+.skills-item h4,
+.about-me-item h4 {
   font-size: 18px;
   margin: 5px 0;
   color: #fff;
 }
 
-.experience-item p, .education-item p, .skills-item p, .about-me-item p {
+.experience-item p,
+.education-item p,
+.skills-item p,
+.about-me-item p {
   font-size: 14px;
   color: #ccc;
 }
@@ -130,11 +149,17 @@
     font-size: 14px;
   }
 
-  .experience-item h3, .education-item h3, .skills-item h3, .about-me-item h3 {
+  .experience-item h3,
+  .education-item h3,
+  .skills-item h3,
+  .about-me-item h3 {
     font-size: 18px;
   }
 
-  .experience-item h4, .education-item h4, .skills-item h4, .about-me-item h4 {
+  .experience-item h4,
+  .education-item h4,
+  .skills-item h4,
+  .about-me-item h4 {
     font-size: 16px;
   }
 }
@@ -161,11 +186,17 @@
     font-size: 12px;
   }
 
-  .experience-item h3, .education-item h3, .skills-item h3, .about-me-item h3 {
+  .experience-item h3,
+  .education-item h3,
+  .skills-item h3,
+  .about-me-item h3 {
     font-size: 16px;
   }
 
-  .experience-item h4, .education-item h4, .skills-item h4, .about-me-item h4 {
+  .experience-item h4,
+  .education-item h4,
+  .skills-item h4,
+  .about-me-item h4 {
     font-size: 14px;
   }
 }

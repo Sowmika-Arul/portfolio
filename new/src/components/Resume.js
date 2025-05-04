@@ -3,10 +3,10 @@ import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
-import './Resume.css'; // Create and import your styles
+import './Resume.css';
 
 function Resume() {
-  const [selectedSection, setSelectedSection] = useState('Education');
+  const [selectedSection, setSelectedSection] = useState('education');
 
   const renderSection = () => {
     switch (selectedSection) {
@@ -28,10 +28,11 @@ function Resume() {
       <div className="sidebar">
         <h1>A Quick Recap</h1>
         <p>Explore and understand better about me.</p>
-        {/* <button onClick={() => setSelectedSection('experience')}>Experience</button> */}
-        <button onClick={() => setSelectedSection('education')}>Education</button>
-        <button onClick={() => setSelectedSection('skills')}>Skills</button>
-        <button onClick={() => setSelectedSection('about')}>About me</button>
+        {/* Buttons with active class */}
+        {/* <button className={selectedSection === 'experience' ? 'active' : ''} onClick={() => setSelectedSection('experience')}>Experience</button> */}
+        <button className={selectedSection === 'education' ? 'active' : ''} onClick={() => setSelectedSection('education')}>Education</button>
+        <button className={selectedSection === 'skills' ? 'active' : ''} onClick={() => setSelectedSection('skills')}>Skills</button>
+        <button className={selectedSection === 'about' ? 'active' : ''} onClick={() => setSelectedSection('about')}>About me</button>
       </div>
       <div className="main-content">
         {renderSection()}

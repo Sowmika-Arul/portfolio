@@ -1,14 +1,45 @@
 .about-me-container {
-  margin-left: 100px;
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #111;
+  border-radius: 8px;
+  color: #ffffff;
 }
 
-.text-warning {
-  color: #ffcc00; 
+.line {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  word-break: break-word;
+  white-space: normal;
 }
 
-/* Additional styling for the 'mockup-code' class, if necessary */
-.mockup-code {
-  font-family: 'Courier New', Courier, monospace; /* This makes the code look like it’s in a terminal */
-  white-space: pre-wrap; /* Ensures that text wraps inside the code block */
+/* Prefix style (like > or $) */
+.prefix {
+  color: white;
+  margin-right: 8px;
 }
 
+/* Custom green text */
+.text-success {
+  color: #00A97F; /* Updated to your requested color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .line {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
